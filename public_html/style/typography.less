@@ -1,0 +1,39 @@
+// Variable text
+@basic-font-size: 13px;
+@basic-line-height: 24px;
+@paragraph-margin: 0 0 15px;
+
+// Mixin headers
+.header-mixin(@header-font-size; @header-margin-bottom; @header-color: @basic-header-color ){
+    font-size: @header-font-size;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: @header-margin-bottom;
+    color: @header-color;
+    font-weight: 400;
+}
+
+// Font family
+@font-family-primary: 'Open Sans', sans-serif;
+@font-family-secondary: 'Lato', sans-serif;
+
+// Style text
+body{
+    font-size: @basic-font-size;
+    font-family: @font-family-primary;
+    color: @basic-text-color;    
+}
+
+p{
+    margin: @paragraph-margin;
+    line-height: @basic-line-height;    
+}
+
+h2{
+    .header-mixin(24px; 12px);
+}
+
+h3{
+    .header-mixin(18px; 18px);
+}
