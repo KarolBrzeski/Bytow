@@ -1,0 +1,88 @@
+// Column layout for different devices
+@columns: 12;
+@column-width: 65;
+@gutter-width: 30;
+@total-width: 100%;
+@line-height: 1.1;
+
+// Section monuments
+.our-monuments .single-col {
+    .column(12);
+    @media @tablet{
+        .column(3);
+    }
+}
+
+// Section news
+.news .single-col {
+    .column(12);
+    @media @tablet{
+        .column(4);
+    }
+}
+
+// Section statistic 
+.statistic .single-col {
+    .column(12);
+    @media @phone{
+        .column(6);
+    }
+    @media @tablet{
+        .column(3);
+    }
+}
+
+// Section accommodation and entertainment
+.services .single-col {
+    .column(12);
+    @media @tablet{
+        .column(4);
+    }
+}
+
+// Section footer part 1
+.footer-main .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);
+    }
+    @media @tablet {
+        .column(3);
+    }
+}
+
+// Class container
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    padding: 0 15px;    
+}
+
+// Images
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+// Underscore
+a{
+    text-decoration: none;
+}
+
+// Reference to each element on the page
+* {
+    box-sizing: border-box;
+}
+
+// Title of sections
+
+.section-title {
+    margin-bottom: 40px;
+    .center-text;
+}
+
+// Headers
+h1,h2,h3{
+    line-height: @line-height;    
+}
