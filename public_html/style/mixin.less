@@ -119,6 +119,17 @@
     background: none repeat 0 0 rgba(30, 30, 30, 0.5);
 }
 
+// Mixin for buttons
+.basic-button(@color; @background-color){
+    color: @color;
+    background: @background-color;
+    text-decoration: none;
+    .inline-block;
+    font-size: @basic-font-size;
+    font-weight: 400;
+    line-height: @basic-line-height;
+    text-transform: uppercase;
+}
 // Media queries and rule "Mobile first"
 @phone: ~"only screen and (min-width: 768px)";
 @tablet: ~"only screen and (min-width: 992px)";
