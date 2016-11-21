@@ -141,3 +141,18 @@ header {
         }
     }
 }
+// Hiding the menu of the mobile
+#main-menu{
+    .invisible;
+    @media @phone{
+        .block;
+    }
+}
+.slicknav_menu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    @media @phone{
+        .invisible;
+    }
+}
