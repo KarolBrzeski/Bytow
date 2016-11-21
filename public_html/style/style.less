@@ -86,3 +86,58 @@ a{
 h1,h2,h3{
     line-height: @line-height;    
 }
+
+// Header
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: @basic-background;
+    border-bottom: 1px solid @basic-border-color;
+    box-shadow: 0 0 1px @basic-border-color;
+    z-index: 3;
+}
+
+// Navigation bar
+.navbar {
+    height: 63px;
+    // Logo
+    .nav-log{
+        .float-left;
+        .center-vertical;
+        z-index: 2;
+    }
+}
+
+// Content menu
+.main-menu-content{
+    .float-right;
+    .center-vertical;
+    ul{
+        .list-style-none;
+        li{
+            .float-left;
+            .block;
+            a{
+                color: @menu-link-color;
+                font-size: 15px;
+                font-family: @font-family-secondary;
+                font-weight: 400;
+                padding: 20px 14px;
+                line-height: 20px;
+                .basic-transition;
+                &:hover{
+                    color: @accent-color;
+                }
+                @media @tablet {
+                    padding: 20px 22px;
+                }
+            }  
+            i{
+                font-size: 14px;
+                
+            }
+        }
+    }
+}
