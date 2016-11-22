@@ -22,6 +22,8 @@
         <script src="js/jquery.slicknav.min.js"></script>
         <!-- bxSlider Javascript file -->
         <script src="js/jquery.bxslider.min.js"></script>
+        <!-- Loading images -->
+        <script src="js/imagesloaded.pkdg.min.js"></script>
     </head>
     <body>
         <!--The main container -->
@@ -32,7 +34,7 @@
                     <div class="container">
                         <div class="navbar">
                             <div class="nav-log">
-                                <a href="#home"><img src="images/bytow.png" alt="Logo city Bytow"></a>                                 
+                                <a href="#home"><img src="images/bytow.png" alt="Logo city Bytow" /></a>                                 
                             </div>
                             <div class="main-menu-content">
                                 <ul id="main-menu">
@@ -57,27 +59,31 @@
             </header>
             <!-- Slider -->
             <div class="top-slider">
-                <ul class="bxslider" id="main-slider">
+                <ul id="main-slider" class="bxslider">
                     <li>
-                        <div class="main-slide-1">
+                        <div class="main-slider-1">
                             <div class="container"> 
                                 <div class="main-slider-content">
+                                    <h1>Bytów</h1>
+                                    <p>Miasto pełne historii</p>
                                     <a href="">Zobacz</a>
-                                    <img src="images/slider2_1.jpg" alt="">
+                                    <img src="images/slider1_1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="main-slide-2">
-                            <div class="container">
+                    <li>                    
+                        <div class="main-slider-2">
+                            <div class="container"> 
                                 <div class="main-slider-content">
+                                    <h1>Kościół Świętej Katarzyny</h1>
+                                    <p>w Bytowie</p>
                                     <a href="">Zobacz</a>
-                                    <img src="images/slider1_1.jpg" alt="">                                    
+                                    <img src="images/slider2_1.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
-                    </li>       
+                    </li>                          
                 </ul>
             </div>
             <!-- Section monuments -->
@@ -122,7 +128,7 @@
                     <div class="container">
                         <div id="landscape-carousel" class="owl-carousel">
                             <div class="landscape-item">
-                                <img src="images/owl_slider/1.jpg" alt="">
+                                <img src="images/owl_slider/1.jpg" alt="" />
                                 <div class="landscape-hover-inner">
                                     <h3>Tory kolejowe</h3>
                                     <p>Bytów</p>
@@ -132,7 +138,7 @@
                             </div>                            
                         </div>
                         <div class="landscape-item">
-                            <img src="images/owl_slider/2.jpg" alt="">
+                            <img src="images/owl_slider/2.jpg" alt="" />
                             <div class="landscape-hover-inner">
                                 <h3>Pomost nad jeziorem Jeleń</h3>
                                 <p>Bytów</p>
@@ -141,7 +147,7 @@
                             </div>
                         </div>
                         <div class="landscape-item">
-                            <img src="images/owl_slider/3.jpg" alt="">
+                            <img src="images/owl_slider/3.jpg" alt="" />
                             <div class="landscape-hover-inner">
                                 <h3>Rzeka Słupia</h3>
                                 <p>Soszyce</p>
@@ -150,7 +156,7 @@
                             </div>
                         </div>
                         <div class="landscape-item">
-                            <img src="images/owl_slider/4.jpg" alt="">
+                            <img src="images/owl_slider/4.jpg" alt="" />
                             <div class="landscape-hover-inner">
                                 <h3>Plaża nad jeziorem Jeleń</h3>
                                 <p>Bytów</p>
@@ -159,7 +165,7 @@
                             </div>
                         </div>
                         <div class="landscape-item">
-                            <img src="images/owl_slider/5.jpg" alt="">
+                            <img src="images/owl_slider/5.jpg" alt="" />
                             <div class="landscape-hover-inner">
                                 <h3>Most kolejowy</h3>
                                 <p>Bytów</p>
@@ -168,7 +174,7 @@
                             </div>
                         </div> 
                         <div class="landscape-item">
-                            <img src="images/owl_slider/6.jpg" alt="">
+                            <img src="images/owl_slider/6.jpg" alt="" />
                             <div class="landscape-hover-inner">
                                 <h3>Zimowy krajobraz jeziora Jeleń</h3>
                                 <p>Bytów</p>
@@ -176,7 +182,7 @@
                                 <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                             </div>
                             <div class="landscape-item">
-                                <img src="images/owl_slider/7.jpg" alt="">
+                                <img src="images/owl_slider/7.jpg" alt="" />
                                 <div class="landscape-hover-inner">
                                     <h3>Promenada nad jeziorem Jeleń</h3>
                                     <p>Bytów</p>
@@ -213,7 +219,7 @@
                     <!-- News: 1 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/kurier_bytowski.jpg"></span>
+                            <span><img src="images/news/kurier_bytowski.jpg" /></span>
                             <div class="news-description">
                                 <h3>Kurier Bytowski</h3>
                                 <p>Tygodnik lokalny. Aktualności wraz z archiwum gazety od poczatku 1999 roku.</p>
@@ -223,7 +229,7 @@
                     <!-- News: 2 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/drutex_bytowia.jpg"></span>
+                            <span><img src="images/news/drutex_bytowia.jpg" /></span>
                             <div class="news-description">
                                 <h3>Drutex-Bytovia</h3>
                                 <p>Oficjalny serwis klubu piłkarskiego Drutex - Bytovia</p>
@@ -233,7 +239,7 @@
                     <!-- News: 3 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/bytow_com_pl.jpg"></span>
+                            <span><img src="images/news/bytow_com_pl.jpg" /></span>
                             <div class="news-description">
                                 <h3>Urząd Miejski w Bytowie</h3>
                                 <p>Historia, zabytki, turystyka, informator, gospodarka, administracja.</p>
@@ -243,7 +249,7 @@
                     <!-- News: 4 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/nasze_miasto.jpg"></span>
+                            <span><img src="images/news/nasze_miasto.jpg" /></span>
                             <div class="news-description">
                                 <h3>Bytów - NaszeMiasto</h3>
                                 <p>Wydarzenia, katalog firm, przewodnik po lokalach, kino, noclegi, imprezy i atrakcje turystyczne - Bytów, region i okolice.</p>
@@ -253,7 +259,7 @@
                     <!-- News: 5 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/gp24.jpg"></span>
+                            <span><img src="images/news/gp24.jpg" /></span>
                             <div class="news-description">
                                 <h3>Bytów - Głos Pomorza</h3>
                                 <p>Wiadomości, zdjęcia, wideo - Powiat bytowski.</p>
@@ -263,7 +269,7 @@
                     <!-- News: 6 -->
                     <div class="container">
                         <div class="single-col">
-                            <span><img src="images/news/dziennik_baltycki.jpg"></span>
+                            <span><img src="images/news/dziennik_baltycki.jpg" /></span>
                             <div class="news-description">
                                 <h3>Dziennik Bałtycki</h3>
                                 <p>Największe na Pomorzu pismo codzienne o charakterze informacyjno-publicystycznym</p>
@@ -328,7 +334,7 @@
                         <div class="services-content">
                             <!-- UŁAN SPA -->
                             <div class="services-content-item single-col">
-                                <img src="images/ulan_spa.jpg" alt="Ułan SPA">
+                                <img src="images/ulan_spa.jpg" alt="Ułan SPA" />
                                 <div>
                                     <h3>Ułan SPA</h3>
                                     <span>SPA, Hotel, Restauracja</span>
@@ -343,7 +349,7 @@
                             </div>
                             <!-- HOTEL IN CASTEL -->
                             <div class="services-content-item single-col">
-                                <img src="images/zamek_hotel.jpg" alt="Hotel w Zamku">
+                                <img src="images/zamek_hotel.jpg" alt="Hotel w Zamku" />
                                 <div>
                                     <h3>Hotel w Zamku</h3>
                                     <span>Hotel, Restauracja, Muzeum</span>
@@ -358,7 +364,7 @@
                             </div>
                             <!-- BLACK CLUB -->
                             <div class="services-content-item single-col">
-                                <img src="images/black_music_club.jpg" alt="Black Club">
+                                <img src="images/black_music_club.jpg" alt="Black Club" />
                                 <div>
                                     <h3>Black Club</h3>
                                     <span>Klub muzyczny w Bytowie</span>
@@ -445,12 +451,12 @@
                                     <div class="footer-gallery">
                                         <h3>Galeria</h3>
                                         <ul>                                            
-                                            <li><a href=""><img src="images/footer/footer1.png" alt="Project 1"></i></a></li>
-                                            <li><a href=""><img src="images/footer/footer2.png" alt="Project 2"></i></a></li>
-                                            <li><a href=""><img src="images/footer/footer3.png" alt="Project 3"></i></a></li>
-                                            <li><a href=""><img src="images/footer/footer4.png" alt="Project 4"></i></a></li>
-                                            <li><a href=""><img src="images/footer/footer5.png" alt="Project 5"></i></a></li>
-                                            <li><a href=""><img src="images/footer/footer6.png" alt="Project 6"></i></a></li> 
+                                            <li><a href=""><img src="images/footer/footer1.png" alt="Project 1" /></i></a></li>
+                                            <li><a href=""><img src="images/footer/footer2.png" alt="Project 2" /></i></a></li>
+                                            <li><a href=""><img src="images/footer/footer3.png" alt="Project 3" /></i></a></li>
+                                            <li><a href=""><img src="images/footer/footer4.png" alt="Project 4" /></i></a></li>
+                                            <li><a href=""><img src="images/footer/footer5.png" alt="Project 5" /></i></a></li>
+                                            <li><a href=""><img src="images/footer/footer6.png" alt="Project 6" /></i></a></li> 
                                         </ul>
                                     </div>
                                 </div>
