@@ -1,3 +1,6 @@
-$(document).ready(function(){
-  $('#main-slider').bxSlider();
-});
+   $('#main-slider').bxSlider({
+      mode:'fade',
+      auto: true,
+      controls: true,
+      pager: false
+  });

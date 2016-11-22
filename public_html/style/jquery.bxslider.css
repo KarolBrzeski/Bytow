@@ -30,11 +30,11 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
+	/*-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border:  5px solid #fff;
-	left: -5px;
+	left: -5px;*/
 	background: #fff;
 	
 	/*fix other elements on the page moving (on Chrome)*/
@@ -106,11 +106,15 @@
 .bx-wrapper .bx-prev {
 	left: 10px;
 	background: url(images/controls.png) no-repeat 0 -32px;
+        filter: brightness(2);
+        -webkit-filter: brightness(2);
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
 	background: url(images/controls.png) no-repeat -43px -32px;
+        filter: brightness(2);
+        -webkit-filter: brightness(2);
 }
 
 .bx-wrapper .bx-prev:hover {
