@@ -109,6 +109,15 @@ hr {
     float: left;
 }
 
+// Background of selected textb
+::-moz-selection{
+    color: @selection-text-color;
+    background:@selection-background-color;
+}
+::selection{
+    color: @selection-text-color;
+    background:@selection-background-color;   
+}
 .navbar {
     height: 63px;
     .nav-logo {
