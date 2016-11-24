@@ -1,0 +1,120 @@
+
+// Modal window 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {    
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 10px 10px;
+    max-width: 560px; 
+    height: auto;
+    @media @tablet{
+        max-width: 700px; 
+    }
+    @media @desktop{
+        max-width: 700px;       
+    }
+
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: @line-height;
+    color: #000;
+    text-shadow: 0 1px 0 #FFF;
+    opacity: 0.2;
+}
+
+.close:hover,
+.close:focus {
+    color: @accent-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 15px;      
+    background-color: @basic-background;
+    color: @bright-text-color;    
+    .border-radius-single(2%);
+    h3{
+        font-size: 18px;
+        line-height: @line-height;
+        font-weight: lighter;
+        float: left;
+    }    
+    border-radius: 10px 10px;
+}
+
+.modal-body {
+    padding: 2px 16px;    
+    p{
+        padding: 20px 50px;
+        text-align: justify;
+    }
+    img{
+        width: 410px; 
+        height: 205px; 
+        @media @tablet{
+            width: 560px; 
+            height: 450px; 
+        }
+        @media @desktop{
+            width: 560px; 
+            height: 450px;      
+        }
+    }
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    h3{
+        position: relative;
+        .basic-button(@bright-text-color;@accent-color);
+        margin: 8px 0;
+        padding:  12px 30px;
+        border: 1px solid @bright-text-color;
+        &:hover {
+            .basic-button(@accent-color;@bright-text-color);
+        }
+    }
+
+}

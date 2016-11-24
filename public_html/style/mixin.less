@@ -29,7 +29,7 @@
 }
 
 // Visibility
-.invisible{
+.invisible {
     display: none;
 }
 .inline-block{
@@ -105,9 +105,9 @@
 }
 
 // Translate 3D
-.translate3d(@move-x, @move-y, @move-z){
+.translate3d(@move-x; @move-y; @move-z){
     transform: translateX(@move-x);
-    transform: translateY(@moveyx);
+    transform: translateY(@move-y);
     transform: translateZ(@move-z);
 }
 
@@ -130,6 +130,7 @@
     line-height: @basic-line-height;
     text-transform: uppercase;
 }
+
 // Media queries and rule "Mobile first"
 @phone: ~"only screen and (min-width: 768px)";
 @tablet: ~"only screen and (min-width: 992px)";

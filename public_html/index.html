@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="style/main.less" type="text/less">
         <!-- bxSlider CSS file -->
         <link href="style/jquery.bxslider.css" rel="stylesheet" />
+        <!-- Owl-Carousel CSS files -->
+        <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />        
+        <link href="owl-carousel/owl.theme.css" rel="stylesheet" />
         <!-- JavaScript LESS -->
         <script src="js/less.min.js"></script>
         <!-- jQuery -->
@@ -23,7 +26,8 @@
         <!-- bxSlider Javascript file -->
         <script src="js/jquery.bxslider.min.js"></script>
         <!-- Loading images -->
-        <script src="js/imagesloaded.pkdg.min.js"></script>       
+        <script src="js/imagesloaded.pkdg.min.js"></script>    
+        <script src="owl-carousel/owl.carousel.min.js"></script> 
     </head>
     <body>
         <!--The main container -->
@@ -33,13 +37,12 @@
                 <nav>
                     <div class="container">
                         <div class="navbar">
-                            <div class="nav-log">
-                                <a href="#home"><img src="images/bytow.png" alt="Logo city Bytow" /></a>                                 
+                            <div class="nav-logo">
+                                <a href=""><img src="images/bytow.png" alt="Logo city Bytow" ></a>                                 
                             </div>
                             <div class="main-menu-content">
-                                <ul id="main-menu">
-                                    <li><a href="" class="menu-link-active"></a></li>
-                                    <li><a href="">Start</a></li>
+                                <ul id="main-menu">                                    
+                                    <li><a href="" class="menu-link-active">Start</a></li>
                                     <li><a href="">Zabytki</a></li>
                                     <li><a href="">Krajobraz</a></li>
                                     <li><a href="">Wiadomości</a></li>
@@ -90,32 +93,101 @@
             <div class="our-monuments">
                 <div class="container">
                     <div class="single-col">
-                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span id="myLink1"><img src="images/mini/zamek.jpg" alt="" /></span>
                         <h3>Zamek krzyżacki</h3>
-                        <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta. Właściwe prace budowlane przeprowadzono jednak w latach 1398–1406 pod kierunkiem Mikołaja Fellensteina. Zamek wzniesiono na planie prostokąta o wymiarach 49×70 metrów z kamieni eratycznych i cegły. W narożach powstały 3 okrągłe i jedna kwadratowa wieża. Przy skrzydle północno-zachodnim postawiono trzypiętrowy, podpiwniczony dom mieszkalny. W budynku tym znajdowały się najważniejsze pomieszczenia, takie jak refektarz, kaplica i mieszkanie prokuratora. Na najwyższej kondygnacji mieściły się magazyny.
-                            Przy skrzydle południowo-zachodnim zbudowano piętrową kuchnię z magazynem żywności. W jej sąsiedztwie znajdowała się studnia. Brama wjazdowa została wzniesiona od strony północno-wschodniej. Przed bramą wjazdową wykopano fosę nad którą przerzucono most zwodzony. W narożnikach skrzydeł postawiono cztery potężne baszty. Warownia pozwalała zastosować do obrony broń palną.
-                            Dziedziniec zamku krzyżackiego w 1410 został opanowany przez wojska Władysława Jagiełły, lecz zwrócono go Krzyżakom po I pokoju toruńskim.</p>
+                        <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta...</p>
+                        <!-- The Modal -->
+                        <div id="myModal-1" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">x</span>
+                                    <h3>Zamek krzyżacki</h3>                                    
+                                </div>  
+                                <hr>
+                                <div class="modal-body">
+                                    <img src="images/zamek_hotel.jpg" alt="" />
+                                    <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta. Właściwe prace budowlane przeprowadzono jednak w latach 1398–1406 pod kierunkiem Mikołaja Fellensteina. Zamek wzniesiono na planie prostokąta o wymiarach 49×70 metrów z kamieni eratycznych i cegły. W narożach powstały 3 okrągłe i jedna kwadratowa wieża. Przy skrzydle północno-zachodnim postawiono trzypiętrowy, podpiwniczony dom mieszkalny. W budynku tym znajdowały się najważniejsze pomieszczenia, takie jak refektarz, kaplica i mieszkanie prokuratora. Na najwyższej kondygnacji mieściły się magazyny. Przy skrzydle południowo-zachodnim zbudowano piętrową kuchnię z magazynem żywności. W jej sąsiedztwie znajdowała się studnia. Brama wjazdowa została wzniesiona od strony północno-wschodniej. Przed bramą wjazdową wykopano fosę nad którą przerzucono most zwodzony. W narożnikach skrzydeł postawiono cztery potężne baszty. Warownia pozwalała zastosować do obrony broń palną. Dziedziniec zamku krzyżackiego w 1410 został opanowany przez wojska Władysława Jagiełły, lecz zwrócono go Krzyżakom po I pokoju toruńskim.</p>              
+                                </div>                                
+                                <div class="modal-footer">
+                                    <h3>Zamknij</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="single-col">
-                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span id="myLink2"><img src="images/mini/most.jpg" alt="" /></span>
                         <h3>Most kolejowy</h3>
-                        <p>most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec od Bytowa do Miastka. Jej budowę rozpoczęto pod koniec XIX wieku.</p>
+                        <p>most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec...</p>
+                        <!-- The Modal -->
+                        <div id="myModal-2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">x</span>
+                                    <h3>Most kolejowy w Bytowie</h3>                                    
+                                </div>  
+                                <hr>
+                                <div class="modal-body">
+                                    <img src="images/most_kolejowy.jpg" alt="" />
+                                    <p>Most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec od Bytowa do Miastka. Jej budowę rozpoczęto pod koniec XIX wieku.</p>              
+                                </div>                                
+                                <div class="modal-footer">
+                                    <h3>Zamknij</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="single-col">
-                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span id="myLink3"><img src="images/mini/kosciol.jpg" alt="" /></span>
                         <h3>Kościół św. Katarzyny</h3>
-                        <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854 według projektu Schindlera na wzór berlińskiego kościoła św. Mateusza. Do 1945 roku była to świątynia ewangelicka pod wezwaniem św. Elżbiety. Po zakończeniu II wojny światowej została przejęta przez katolików, których kościół został zniszczony przez żołnierzy sowieckich. Budowla została poświęcona w dniu 24 czerwca 1945 roku - wspomnienie św. Jana Chrzciciela, w związku z tym otrzymała dwa wezwania.</p>
+                        <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854...</p>
+                        <!-- The Modal -->
+                        <div id="myModal-3" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">x</span>
+                                    <h3>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela</h3>                                    
+                                </div>  
+                                <hr>
+                                <div class="modal-body">
+                                    <img src="images/kosciol_sw_katarzyny.jpg" alt="" />
+                                    <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854 według projektu Schindlera na wzór berlińskiego kościoła św. Mateusza. Do 1945 roku była to świątynia ewangelicka pod wezwaniem św. Elżbiety. Po zakończeniu II wojny światowej została przejęta przez katolików, których kościół został zniszczony przez żołnierzy sowieckich. Budowla została poświęcona w dniu 24 czerwca 1945 roku - wspomnienie św. Jana Chrzciciela, w związku z tym otrzymała dwa wezwania.</p>              
+                                </div>                                
+                                <div class="modal-footer">
+                                    <h3>Zamknij</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="single-col">
-                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span id="myLink4"><img src="images/mini/cerkiew.jpg" alt="" /></span>
                         <h3>Cerkiew Świętego Jerzego</h3>
-                        <p>bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia ewangelicka (niem. Bergkirche Sankt Georg), zbudowany charakterystycznym systemem ryglowym, obecnie, po generalnym remoncie w latach osiemdziesiątych XX wieku, cerkiew bizantyjsko-ukraińska, w której można zobaczyć tabernakulum z XVII wieku z cerkwi Surochów, ikonostas (Carskie wrota), barokowe rzeźbione stalle i chór, malowidła ludowe oraz kopułę kościoła w stylu architektury bizantyjskiej.</p>
+                        <p>Bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia...</p>
+                        <!-- The Modal -->
+                        <div id="myModal-4" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">x</span>
+                                    <h3>Cerkiew Świętego Jerzego</h3>                                    
+                                </div>  
+                                <hr>
+                                <div class="modal-body">
+                                    <img src="images/cerkiew_sw_jerzego.jpg" alt="" />
+                                    <p>Bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia ewangelicka (niem. Bergkirche Sankt Georg), zbudowany charakterystycznym systemem ryglowym, obecnie, po generalnym remoncie w latach osiemdziesiątych XX wieku, cerkiew bizantyjsko-ukraińska, w której można zobaczyć tabernakulum z XVII wieku z cerkwi Surochów, ikonostas (Carskie wrota), barokowe rzeźbione stalle i chór, malowidła ludowe oraz kopułę kościoła w stylu architektury bizantyjskiej.</p>              
+                                </div>                                
+                                <div class="modal-footer">
+                                    <h3>Zamknij</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Section landscape -->
             <div class="landscape">
-
                 <!-- Title -->
                 <div class="section-title">
                     <div class="container">
@@ -127,67 +199,82 @@
                 <div class="landscape-slider">
                     <div class="container">
                         <div id="landscape-carousel" class="owl-carousel">
+
                             <div class="landscape-item">
                                 <img src="images/owl_slider/1.jpg" alt="" />
-                                <div class="landscape-hover-inner">
-                                    <h3>Tory kolejowe</h3>
-                                    <p>Bytów</p>
-                                    <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                    <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Tory kolejowe</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
-                            </div>                            
-                        </div>
-                        <div class="landscape-item">
-                            <img src="images/owl_slider/2.jpg" alt="" />
-                            <div class="landscape-hover-inner">
-                                <h3>Pomost nad jeziorem Jeleń</h3>
-                                <p>Bytów</p>
-                                <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                             </div>
-                        </div>
-                        <div class="landscape-item">
-                            <img src="images/owl_slider/3.jpg" alt="" />
-                            <div class="landscape-hover-inner">
-                                <h3>Rzeka Słupia</h3>
-                                <p>Soszyce</p>
-                                <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                            <div class="landscape-item">
+                                <img src="images/owl_slider/2.jpg" alt="" />
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Pomost nad jeziorem Jeleń</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="landscape-item">
-                            <img src="images/owl_slider/4.jpg" alt="" />
-                            <div class="landscape-hover-inner">
-                                <h3>Plaża nad jeziorem Jeleń</h3>
-                                <p>Bytów</p>
-                                <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                            <div class="landscape-item">
+                                <img src="images/owl_slider/3.jpg" alt="" />
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Rzeka Słupia</h3>
+                                        <p>Soszyce</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="landscape-item">
-                            <img src="images/owl_slider/5.jpg" alt="" />
-                            <div class="landscape-hover-inner">
-                                <h3>Most kolejowy</h3>
-                                <p>Bytów</p>
-                                <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                            <div class="landscape-item">
+                                <img src="images/owl_slider/4.jpg" alt="" />
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Plaża nad jeziorem Jeleń</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div> 
-                        <div class="landscape-item">
-                            <img src="images/owl_slider/6.jpg" alt="" />
-                            <div class="landscape-hover-inner">
-                                <h3>Zimowy krajobraz jeziora Jeleń</h3>
-                                <p>Bytów</p>
-                                <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                            <div class="landscape-item">
+                                <img src="images/owl_slider/5.jpg" alt="" />
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Most kolejowy</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="landscape-item">
+                                <img src="images/owl_slider/6.jpg" alt="" />
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Zimowy krajobraz jeziora Jeleń</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="landscape-item">
                                 <img src="images/owl_slider/7.jpg" alt="" />
-                                <div class="landscape-hover-inner">
-                                    <h3>Promenada nad jeziorem Jeleń</h3>
-                                    <p>Bytów</p>
-                                    <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                    <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                <div class="landscape-hover">
+                                    <div class="landscape-hover-inner">
+                                        <h3>Promenada nad jeziorem Jeleń</h3>
+                                        <p>Bytów</p>
+                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -488,5 +575,7 @@
         <!-- My scripts -->
         <script src="js/Mobile_navbar.js"></script>
         <script src="js/bxSlider.js"></script>
+        <script src="js/owl_carousel_slider.js"></script>
+        <script src="js/modal_windows.js"></script>
     </body>
 </html>
