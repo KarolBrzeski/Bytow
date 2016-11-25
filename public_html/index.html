@@ -286,12 +286,13 @@
             <!-- Section video -->
             <div class="section-video">
                 <div class="container">
-                    <div id="movie"></div>
+                    <!-- Overwriting style YTPlayer -->
+                    <div id="movie" style="position: absolute; left: 0px; top: 0px;"></div>
                     <div class="video-line">
                         <h2>Bytów</h2>
                         <a href="#" class="button">Zobacz więcej</a>
                     </div>
-                    <div class="player"></div>
+                    <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uknnaCRGjIM',containment:'#movie',autoPlay:true, mute:true, startAt:30, opacity:1, loop:true, showControls:false, quality:'default'}"></div>
                 </div>
             </div>
             <!-- Section news -->
@@ -579,5 +580,6 @@
         <script src="js/bxSlider.js"></script>
         <script src="js/owl_carousel_slider.js"></script>
         <script src="js/modal_windows.js"></script>
+        <script src="js/videoplayerYT.js"></script>
     </body>
 </html>
