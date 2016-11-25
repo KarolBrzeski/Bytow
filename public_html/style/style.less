@@ -498,3 +498,55 @@ hr {
         }
     }
 }
+
+// Accommodation and entertainment
+.services{
+    padding: 55px 0 10px;
+    .center-text;
+    .section-border-bottom;
+    .overflow-fix;
+    .single-col{
+        margin-bottom: 30px;
+    }
+}
+.services-content{
+    .overflow-fix;
+    margin-bottom: 40px;
+}
+.services-content-item{
+    .center-text;
+    img {
+        margin-bottom: 30px;
+        width: 100%;
+        @media @tablet{
+            max-width: 360px;
+            max-height: 265px;
+        }
+    }
+    h3{
+        .header-mixin(18px;4px);
+    }
+    span{
+        line-height: 24px;
+        margin: 0 0 17px;
+        .inline-block;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+.services-social{
+    .list-style-none;
+    li{
+        .inline-block;
+        margin-right: 18px;
+        i{
+            font-size: 18px;
+            color: darken(@accent-color, 15%);
+            .basic-transition;
+            &:hover{
+                color: @accent-color;
+            }
+        }
+    }
+}
