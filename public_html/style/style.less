@@ -371,3 +371,39 @@ hr {
         .variable-transition(0.6s);
     }
 }
+
+// Video
+.section-video{
+    .invisible;
+    position: relative;
+    .container{
+        padding: 175px 0;
+        z-index: 2;        
+    }
+    @media @desktop{
+        .block;
+    }    
+}
+#movie{
+    .size(100%;100%);
+    &:after{
+        .dark-overlay;        
+    }
+}
+.video-line{
+    .center-text;
+    h2{
+        .header-mixin(48px;26px;@bright-text-color);
+        position: relative;
+    }
+    a{
+        position: relative;
+        .basic-button(@bright-text-color;@accent-color);
+        margin: 8px 0px;
+        padding: 12px 30px;
+        .basic-transition;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
