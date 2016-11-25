@@ -467,3 +467,34 @@ hr {
         font-size: 14px;
     }
 }
+
+// Banner paralax
+.photo-banner {
+    .center-text;
+    background: url('../images/murawa.png') fixed 0 0;
+    .photo-banner-inner {
+        position: relative;
+        z-index: 0;
+        &:after {
+            .dark-overlay;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 175px 0;
+        }
+        h2 {
+            .header-mixin(48px;26px;@brightest-text-color);
+        }
+        a {
+            position: relative;
+            .basic-button(@brightest-text-color;@accent-color);
+            margin: 8px 0;
+            padding: 12px 30px;
+            .basic-transition;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
