@@ -428,7 +428,7 @@ hr {
             img{
                 transition: transform 0.6s;
             }
-           &:hover img{
+            &:hover img{
                 transform: scale(0.8);
             }
         }        
@@ -441,5 +441,29 @@ hr {
         @media @tablet{
             text-align: left;
         }
+    }
+}
+// Statistic
+.statistic{
+    background: @alternate-background;
+    .overflow-fix;
+    padding: 80px 0 70px;
+    .single-col{
+        .center-text;
+        .statistic-content{
+            margin-bottom: 30px;
+            h3{
+                font-size: 60px;
+                color: @accent-color;
+                margin: 0;
+            }            
+        }       
+    }
+    h2{
+        font-size: 60px;
+        color: @basic-header-color;
+    }
+    p{
+        font-size: 14px;
     }
 }
