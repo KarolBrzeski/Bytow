@@ -577,3 +577,152 @@ hr {
     min-height: 50px;
     width: 100%;
 }
+// Footer
+footer{    
+    ul{
+        .list-style-none;
+    }
+}
+.footer-main{
+    padding: 85px 0 65px; 
+    background: url('../images/footer.jpg');
+    color: @bright-text-color;
+    position: relative;
+    z-index: 0;
+    &:after {
+        .dark-overlay;
+    }
+    .overflow-fix;
+    h3{
+        .header-mixin(18px;30px;@bright-text-color);
+    }
+    .single-col{
+        margin-bottom: 30px;
+        @media @tablet{
+            margin-bottom: 0;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 1;        
+    }
+}
+// Author - footer
+.footer-author{
+    .list-style-none;
+    li{
+        .inline-block;
+        margin-right: 9px;
+        margin-bottom: 3px;
+    }
+    a{
+        .inline-block;       
+        border: 1px solid;
+        color: @footer-social-borders;
+        .size(30px;30px);
+        .border-radius-single(4px);
+        .center-text;
+        text-decoration: none;
+        .basic-transition;
+        &:hover{
+            background-color: @footer-social-borders;
+        }
+        i{
+            font-size: 14px;
+            color: @footer-social-icons;
+            line-height: 28px;
+        }
+    }
+}
+// Latest projects - footer
+.footer-last-projects{   
+    li{
+        padding-top: 15px;
+        border-top: 1px solid @footer-social-borders;
+        &:first-child{
+            padding-top:0;
+            border-top: none;
+        }        
+        h4{
+            margin: 0;
+            font-size: 13px;
+            a{
+                color: @bright-text-color;
+                font-weight: 400;
+                .basic-transition;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.post-date{
+    line-height: @basic-line-height;
+    margin: 0 0 10px;
+    color: @footer-project-date;
+    font-size: 12px;
+    .inline-block;
+}
+// Gallery - footer
+.gallery{
+    .list-style-none;
+    li{
+        .inline-block;
+        margin-right: 2px;
+        margin-bottom: 6px;
+        img{
+            width: 80px;
+        }
+        a{
+            .basic-transition;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+// Contact us - footer
+.contact{
+    .list-style-none;
+
+    li{   
+        .inline-block;
+        margin-right: 18px;
+        margin-bottom: 6px;
+    }
+    a{
+        .inline-block;       
+        border: 1px solid;
+        color: @footer-social-borders;
+        .size(60px;60px);
+        .border-radius-single(4px);
+        .center-text;
+        text-decoration: none;
+        .basic-transition;
+        &:hover{
+            background-color: @footer-social-borders;
+        }
+        i{
+            font-size: 28px;
+            color: @footer-social-icons;
+            line-height: 58px;
+        }
+    }
+}
+// Copyright
+.copywrite{
+    padding: 20px 0;
+    z-index: 1;
+    background-color: @footer-copywrite-background;
+    border-top: 1px solid @footer-social-borders;
+    p{
+        font-size: 12px;
+        color: @basic-text-color;
+        margin: 0;
+        a{
+            color: @bright-text-color;
+        }
+    }
+}
+
