@@ -15,8 +15,9 @@
         <!-- bxSlider CSS file -->
         <link href="style/jquery.bxslider.css" rel="stylesheet" />
         <!-- Owl-Carousel CSS files -->
-        <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />        
-        <link href="owl-carousel/owl.theme.css" rel="stylesheet" />
+        <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
+        <!-- Animate CSS files -->        
+        <link href="style/animate.css" rel="stylesheet" />
         <!-- JavaScript LESS -->
         <script src="js/less.min.js"></script>
         <!-- jQuery -->
@@ -97,9 +98,11 @@
             <div class="our-monuments">
                 <div class="container">
                     <div class="single-col">
-                        <span id="myLink1"><img src="images/mini/zamek.jpg" alt="" /></span>
-                        <h3>Zamek krzyżacki</h3>
-                        <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta...</p>
+                        <div class="animated slideInLeft">
+                            <span id="myLink1"><img src="images/mini/zamek.jpg" alt="" /></span>
+                            <h3>Zamek krzyżacki</h3>
+                            <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta...</p>
+                        </div>
                         <!-- The Modal -->
                         <div id="myModal-1" class="modal">
                             <!-- Modal content -->
@@ -120,9 +123,11 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <span id="myLink2"><img src="images/mini/most.jpg" alt="" /></span>
-                        <h3>Most kolejowy</h3>
-                        <p>most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec...</p>
+                        <div class="animated slideInLeft">
+                            <span id="myLink2"><img src="images/mini/most.jpg" alt="" /></span>
+                            <h3>Most kolejowy</h3>
+                            <p>most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec...</p>
+                        </div>
                         <!-- The Modal -->
                         <div id="myModal-2" class="modal">
                             <!-- Modal content -->
@@ -143,9 +148,11 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <span id="myLink3"><img src="images/mini/kosciol.jpg" alt="" /></span>
-                        <h3>Kościół św. Katarzyny</h3>
-                        <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854...</p>
+                        <div class="animated slideInRight">
+                            <span id="myLink3"><img src="images/mini/kosciol.jpg" alt="" /></span>
+                            <h3>Kościół św. Katarzyny</h3>
+                            <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854...</p>
+                        </div>
                         <!-- The Modal -->
                         <div id="myModal-3" class="modal">
                             <!-- Modal content -->
@@ -166,9 +173,11 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <span id="myLink4"><img src="images/mini/cerkiew.jpg" alt="" /></span>
-                        <h3>Cerkiew Świętego Jerzego</h3>
-                        <p>Bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia...</p>
+                        <div class="animated slideInRight">
+                            <span id="myLink4"><img src="images/mini/cerkiew.jpg" alt="" /></span>
+                            <h3>Cerkiew Świętego Jerzego</h3>
+                            <p>Bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia...</p>
+                        </div>
                         <!-- The Modal -->
                         <div id="myModal-4" class="modal">
                             <!-- Modal content -->
@@ -203,7 +212,6 @@
                 <div class="landscape-slider">
                     <div class="container">
                         <div id="landscape-carousel" class="owl-carousel">
-
                             <div class="landscape-item">
                                 <img src="images/owl_slider/1.jpg" alt="" />
                                 <div class="landscape-hover">
@@ -310,50 +318,62 @@
                     <div class="container">
                         <!-- News: 1 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://www.kurierbytowski.com.pl/kurier/ "><img src="images/news/kurier_bytowski.jpg"></a></span>
-                            <div class="news-description">
-                                <h3>Kurier Bytowski</h3>
-                                <p>Tygodnik lokalny. Aktualności wraz z archiwum gazety od poczatku 1999 roku.</p>
+                            <div class="animated slideInLeft">
+                                <span><a target="_blank" href="http://www.kurierbytowski.com.pl/kurier/ "><img src="images/news/kurier_bytowski.jpg"></a></span>
+                                <div class="news-description">
+                                    <h3>Kurier Bytowski</h3>
+                                    <p>Tygodnik lokalny. Aktualności wraz z archiwum gazety od poczatku 1999 roku.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- News: 2 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://drutexbytovia.pl/"><img src="images/news/drutex_bytowia.jpg"></a></span>
-                            <div class="news-description">
-                                <h3>Drutex-Bytovia</h3>
-                                <p>Oficjalny serwis klubu piłkarskiego Drutex-Bytovia</p>
+                            <div class="animated slideInUp">
+                                <span><a target="_blank" href="http://drutexbytovia.pl/"><img src="images/news/drutex_bytowia.jpg"></a></span>
+                                <div class="news-description">
+                                    <h3>Drutex-Bytovia</h3>
+                                    <p>Oficjalny serwis klubu piłkarskiego Drutex-Bytovia</p>
+                                </div>
                             </div>
                         </div>
                         <!-- News: 3 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://www.bytow.com.pl/"><img src="images/news/bytow_com_pl.jpg"></a></span>
-                            <div class="news-description">
-                                <h3>Urząd Miejski w Bytowie</h3>
-                                <p>Historia, zabytki, turystyka, informator, gospodarka, administracja.</p>
+                            <div class="animated slideInRight">
+                                <span><a target="_blank" href="http://www.bytow.com.pl/"><img src="images/news/bytow_com_pl.jpg"></a></span>
+                                <div class="news-description">
+                                    <h3>Urząd Miejski w Bytowie</h3>
+                                    <p>Historia, zabytki, turystyka, informator, gospodarka, administracja.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- News: 4 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://bytow.naszemiasto.pl/"><img src="images/news/nasze_miasto.jpg"></a></span>
-                            <div class="news-description">
-                                <h3>Bytów - NaszeMiasto</h3>
-                                <p>Wydarzenia, katalog firm, przewodnik po lokalach, kino, noclegi, imprezy i atrakcje turystyczne - Bytów, region i okolice.</p>
+                            <div class="animated slideInLeft">
+                                <span><a target="_blank" href="http://bytow.naszemiasto.pl/"><img src="images/news/nasze_miasto.jpg"></a></span>
+                                <div class="news-description">
+                                    <h3>Bytów - NaszeMiasto</h3>
+                                    <p>Wydarzenia, katalog firm, przewodnik po lokalach, kino, noclegi, imprezy i atrakcje turystyczne - Bytów, region i okolice.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- News: 5 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://www.gp24.pl/wiadomosci/bytow/"><img src="images/news/gp24.jpg"></a></span>
-                            <div class="news-description">
-                                <h3>Bytów - Głos Pomorza</h3>
-                                <p>Wiadomości, zdjęcia, wideo - Powiat bytowski.</p>
+                            <div class="animated slideInUp">
+                                <span><a target="_blank" href="http://www.gp24.pl/wiadomosci/bytow/"><img src="images/news/gp24.jpg"></a></span>
+                                <div class="news-description">
+                                    <h3>Bytów - Głos Pomorza</h3>
+                                    <p>Wiadomości, zdjęcia, wideo - Powiat bytowski.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- News: 6 -->
                         <div class="single-col">
-                            <span><a target="_blank" href="http://www.dziennikbaltycki.pl/wiadomosci/bytow/"><img src="images/news/dziennik_baltycki.png"></a></span>
-                            <div class="news-description">
-                                <h3>Dziennik Bałtycki</h3>
-                                <p>Największe na Pomorzu pismo codzienne o charakterze informacyjno-publicystycznym</p>
+                            <div class="animated slideInRight">
+                                <span><a target="_blank" href="http://www.dziennikbaltycki.pl/wiadomosci/bytow/"><img src="images/news/dziennik_baltycki.png"></a></span>
+                                <div class="news-description">
+                                    <h3>Dziennik Bałtycki</h3>
+                                    <p>Największe na Pomorzu pismo codzienne o charakterze informacyjno-publicystycznym</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -546,8 +566,8 @@
                         <!-- Contact us-->
                         <div class="contact">
                             <div class="single-col">                                
-                                    <h3>Kontakt</h3>
-                                    <div class="footer-contact">
+                                <h3>Kontakt</h3>
+                                <div class="footer-contact">
                                     <ul>                                            
                                         <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
                                         <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
@@ -574,5 +594,6 @@
         <script src="js/videoplayerYT.js"></script>
         <script src="js/countTo.js"></script>
         <script src="js/sliderRecommended.js"></script>
+        <script src="js/animate.js"></script>
     </body>
 </html>

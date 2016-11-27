@@ -547,6 +547,7 @@ hr {
             .basic-transition;
             &:hover{
                 color: @accent-color;
+                .rubber;
             }
         }
     }
@@ -627,6 +628,7 @@ footer{
         .basic-transition;
         &:hover{
             background-color: @footer-social-borders;
+            .rubber;
         }
         i{
             font-size: 14px;
@@ -702,12 +704,15 @@ footer{
         text-decoration: none;
         .basic-transition;
         &:hover{
-            background-color: @footer-social-borders;
+            background-color: @footer-social-borders;            
         }
         i{
             font-size: 28px;
             color: @footer-social-icons;
             line-height: 58px;
+            &:hover{
+                .rubber;
+            }
         }
     }
 }
@@ -723,7 +728,8 @@ footer{
         margin: 0;
         a{
             color: @bright-text-color;
-        }
+
+        }        
     }
 }
 
