@@ -33,6 +33,8 @@
         <script src="js/jquery.mb.YTPlayer.min.js"></script>
         <!-- jQuery countTo Plugin -->
         <script src="js/jquery.countTo.js"></script>
+        <!-- Viewport Checker -->
+        <script src="js/jquery.viewportchecker.js"></script>
     </head>
     <body>
         <!--The main container -->
@@ -98,7 +100,7 @@
             <div class="our-monuments">
                 <div class="container">
                     <div class="single-col">
-                        <div class="animated slideInLeft">
+                        <div data-animate="animated slideInLeft">
                             <span id="myLink1"><img src="images/mini/zamek.jpg" alt="" /></span>
                             <h3>Zamek krzyżacki</h3>
                             <p>W 1390 roku Krzyżacy zaczęli budować w Bytowie murowany zamek na wzniesieniu w południowo-wschodniej części miasta...</p>
@@ -123,7 +125,7 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <div class="animated slideInLeft">
+                        <div data-animate="animated slideInLeft">
                             <span id="myLink2"><img src="images/mini/most.jpg" alt="" /></span>
                             <h3>Most kolejowy</h3>
                             <p>most nad rzeką Borują w Bytowie na Kaszubach z ok. 1884 roku. Był jednym z elementów linii kolejowej mającej biec...</p>
@@ -148,7 +150,7 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <div class="animated slideInRight">
+                        <div data-animate="animated slideInRight">
                             <span id="myLink3"><img src="images/mini/kosciol.jpg" alt="" /></span>
                             <h3>Kościół św. Katarzyny</h3>
                             <p>Kościół świętej Katarzyny Aleksandryjskiej i świętego Jana Chrzciciela w Bytowie został wzniesiony w latach 1848-1854...</p>
@@ -173,7 +175,7 @@
                         </div>
                     </div>
                     <div class="single-col">
-                        <div class="animated slideInRight">
+                        <div data-animate="animated slideInRight">
                             <span id="myLink4"><img src="images/mini/cerkiew.jpg" alt="" /></span>
                             <h3>Cerkiew Świętego Jerzego</h3>
                             <p>Bytowska cerkiew greckokatolicka to kościół pod wezwaniem świętego Jerzego z lat 1675-1685, dawna świątynia...</p>
@@ -318,7 +320,7 @@
                     <div class="container">
                         <!-- News: 1 -->
                         <div class="single-col">
-                            <div class="animated slideInLeft">
+                            <div data-animate="animated slideInLeft">
                                 <span><a target="_blank" href="http://www.kurierbytowski.com.pl/kurier/ "><img src="images/news/kurier_bytowski.jpg"></a></span>
                                 <div class="news-description">
                                     <h3>Kurier Bytowski</h3>
@@ -328,7 +330,7 @@
                         </div>
                         <!-- News: 2 -->
                         <div class="single-col">
-                            <div class="animated slideInUp">
+                            <div data-animate="animated slideInUp">
                                 <span><a target="_blank" href="http://drutexbytovia.pl/"><img src="images/news/drutex_bytowia.jpg"></a></span>
                                 <div class="news-description">
                                     <h3>Drutex-Bytovia</h3>
@@ -338,7 +340,7 @@
                         </div>
                         <!-- News: 3 -->
                         <div class="single-col">
-                            <div class="animated slideInRight">
+                            <div data-animate="animated slideInRight">
                                 <span><a target="_blank" href="http://www.bytow.com.pl/"><img src="images/news/bytow_com_pl.jpg"></a></span>
                                 <div class="news-description">
                                     <h3>Urząd Miejski w Bytowie</h3>
@@ -348,7 +350,7 @@
                         </div>
                         <!-- News: 4 -->
                         <div class="single-col">
-                            <div class="animated slideInLeft">
+                            <div data-animate="animated slideInLeft">
                                 <span><a target="_blank" href="http://bytow.naszemiasto.pl/"><img src="images/news/nasze_miasto.jpg"></a></span>
                                 <div class="news-description">
                                     <h3>Bytów - NaszeMiasto</h3>
@@ -358,7 +360,7 @@
                         </div>
                         <!-- News: 5 -->
                         <div class="single-col">
-                            <div class="animated slideInUp">
+                            <div data-animate="animated slideInUp">
                                 <span><a target="_blank" href="http://www.gp24.pl/wiadomosci/bytow/"><img src="images/news/gp24.jpg"></a></span>
                                 <div class="news-description">
                                     <h3>Bytów - Głos Pomorza</h3>
@@ -368,7 +370,7 @@
                         </div>
                         <!-- News: 6 -->
                         <div class="single-col">
-                            <div class="animated slideInRight">
+                            <div data-animate="animated slideInRight">
                                 <span><a target="_blank" href="http://www.dziennikbaltycki.pl/wiadomosci/bytow/"><img src="images/news/dziennik_baltycki.png"></a></span>
                                 <div class="news-description">
                                     <h3>Dziennik Bałtycki</h3>
@@ -417,8 +419,8 @@
             <div class="photo-banner">
                 <div class="photo-banner-inner">
                     <div class="container">
-                        <h2>DRUTEX-BYTOVIA 1 : 0 GKS KATOWICE</h2>
-                        <p>12.11.2016</p>
+                        <h2 data-animate="animated lightSpeedIn">DRUTEX-BYTOVIA 1 : 0 GKS KATOWICE</h2>
+                        <p data-animate="animated lightSpeedIn">12.11.2016</p>
                         <a href="#" class="button">Zobacz</a>
                     </div>
                 </div>
@@ -435,49 +437,43 @@
                     </div>
                     <div class="services-content">
                         <!-- UŁAN SPA -->
-                        <div class="services-content-item single-col">
-                            <img src="images/ulan_spa.jpg" alt="Ułan SPA" />
-                            <div>
-                                <h3>Ułan SPA</h3>
-                                <span>SPA, Hotel, Restauracja</span>
-                                <p>Centrum Ułan SPA to wyjątkowe miejsce położone w Bytowie na Kaszubach oferujące noclegi, kompleksową odnowę biologiczną, a także odpoczynek i relax w jedynym na pomorzu Ogrodzie Japońskim.</p>
-                                <ul class="services-social">
-                                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                        <div class="services-content-item single-col" data-animate="animated slideInLeft">                            <img src="images/ulan_spa.jpg" alt="Ułan SPA" />
+
+                            <h3>Ułan SPA</h3>
+                            <span>SPA, Hotel, Restauracja</span>
+                            <p>Centrum Ułan SPA to wyjątkowe miejsce położone w Bytowie na Kaszubach oferujące noclegi, kompleksową odnowę biologiczną, a także odpoczynek i relax w jedynym na pomorzu Ogrodzie Japońskim.</p>
+                            <ul class="services-social">
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                            </ul>                            
                         </div>
                         <!-- HOTEL IN CASTEL -->
-                        <div class="services-content-item single-col">
-                            <img src="images/zamek_hotel.jpg" alt="Hotel w Zamku" />
-                            <div>
-                                <h3>Hotel w Zamku</h3>
-                                <span>Hotel, Restauracja, Muzeum</span>
-                                <p>Obecność historii, komfort wypoczynku, niepowtarzalny smak.Tego wszystkiego doświadczymy odwiedzając Hotel i Restaurację  „W Zamku” w Bytowie woj. pomorskie.</p>
-                                <ul class="services-social">
-                                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                        <div class="services-content-item single-col" data-animate="animated slideInDown">
+                            <img src="images/zamek_hotel.jpg" alt="Hotel w Zamku" />                            
+                            <h3>Hotel w Zamku</h3>
+                            <span>Hotel, Restauracja, Muzeum</span>
+                            <p>Obecność historii, komfort wypoczynku, niepowtarzalny smak.Tego wszystkiego doświadczymy odwiedzając Hotel i Restaurację  „W Zamku” w Bytowie woj. pomorskie.</p>
+                            <ul class="services-social">
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                            </ul>                          
                         </div>
                         <!-- BLACK CLUB -->
-                        <div class="services-content-item single-col">
-                            <img src="images/black_music_club.jpg" alt="Black Club" />
-                            <div>
-                                <h3>Black Club</h3>
-                                <span>Klub muzyczny w Bytowie</span>
-                                <p>Fani muzyki i tańca w każdy weekend znajdą tu coś dla siebie - gramy: hity które są obecnie na topie. Warto nas odwiedzić oraz rezerwować loże. </p>
-                                <ul class="services-social">
-                                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                        <div class="services-content-item single-col" data-animate="animated slideInRight">
+                            <img src="images/black_music_club.jpg" alt="Black Club" />                           
+                            <h3>Black Club</h3>
+                            <span>Klub muzyczny w Bytowie</span>
+                            <p>Fani muzyki i tańca w każdy weekend znajdą tu coś dla siebie - gramy: hity które są obecnie na topie. Warto nas odwiedzić oraz rezerwować loże. </p>
+                            <ul class="services-social">
+                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                            </ul>                           
                         </div>
                     </div>
                 </div>
@@ -595,5 +591,6 @@
         <script src="js/countTo.js"></script>
         <script src="js/sliderRecommended.js"></script>
         <script src="js/animate.js"></script>
+        <script src="js/viewport_checker.js"></script>
     </body>
 </html>
