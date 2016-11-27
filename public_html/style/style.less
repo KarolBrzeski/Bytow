@@ -190,7 +190,7 @@ hr {
         background-image: url('../images/slider1.jpg');        
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 0 0;        
+        background-position: 0 0;          
         &:after{
             .dark-overlay;            
         }
@@ -231,7 +231,7 @@ hr {
 }
 // Conntent bxSlider
 .main-slider-content{
-    padding: 15% 2%;
+    padding: 15% 45px;
     color: @bright-text-color;
     position: relative;
     z-index: 1;
@@ -257,14 +257,13 @@ hr {
         margin: 8px 0;
         padding:  12px 30px;
         border: 1px solid @bright-text-color;
-    }        
+    }    
 }
 
 // Main container
 #main-container{
     padding-top: 53px;
 }
-
 // Section monuments
 .our-monuments{
     padding: 80px 0 60px;
@@ -427,11 +426,11 @@ hr {
                 margin-bottom: 0;                
             }
             img{
-                transition: transform 0.6s;
+                transition: transform 0.6s;                
             }
             &:hover img{
                 transform: scale(0.8);
-            }
+            }            
         }        
         .news-description{
             margin-left: 0;
@@ -486,6 +485,9 @@ hr {
         }
         h2 {
             .header-mixin(48px;26px;@brightest-text-color);
+        }
+        p{
+            .header-mixin(14px;8px;@brightest-text-color);
         }
         a {
             position: relative;
