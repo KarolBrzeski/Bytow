@@ -18,6 +18,8 @@
         <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
         <!-- Animate CSS files -->        
         <link href="style/animate.css" rel="stylesheet" />
+         <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="style/magnific-popup.css">
         <!-- JavaScript LESS -->
         <script src="js/less.min.js"></script>
         <!-- jQuery -->
@@ -34,7 +36,10 @@
         <!-- jQuery countTo Plugin -->
         <script src="js/jquery.countTo.js"></script>
         <!-- Viewport Checker -->
-        <script src="js/jquery.viewportchecker.js"></script>
+        <script src="js/jquery.viewportchecker.js"></script>  
+        <!-- Magnific Popup core JS file -->
+        <script src="js/jquery.magnific-popup.js"></script>
+
     </head>
     <body>
         <!--The main container -->
@@ -213,14 +218,14 @@
                 <!-- Slider landscape -->
                 <div class="landscape-slider">
                     <div class="container">
-                        <div id="landscape-carousel" class="owl-carousel">
+                        <div id="landscape-carousel" class="owl-carousel parent-container">
                             <div class="landscape-item">
                                 <img src="images/owl_slider/1.jpg" alt="" />
                                 <div class="landscape-hover">
                                     <div class="landscape-hover-inner">
                                         <h3>Tory kolejowe</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/1.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -231,7 +236,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Pomost nad jeziorem Jeleń</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/2.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -242,7 +247,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Rzeka Słupia</h3>
                                         <p>Soszyce</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/3.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -253,7 +258,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Plaża nad jeziorem Jeleń</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/4.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -264,7 +269,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Most kolejowy</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/5.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -275,7 +280,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Zimowy krajobraz jeziora Jeleń</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/6.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -286,7 +291,7 @@
                                     <div class="landscape-hover-inner">
                                         <h3>Promenada nad jeziorem Jeleń</h3>
                                         <p>Bytów</p>
-                                        <a href="" class="landscape-link-left" ><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <a href="images/owl_slider/7.jpg" class="landscape-link-left" ><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                                         <a href="" class="landscape-link-right" ><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -546,13 +551,13 @@
                             <div class="single-col">
                                 <div class="footer-gallery">
                                     <h3>Galeria</h3>
-                                    <ul>                                            
-                                        <li><a href=""><img src="images/footer/footer1.jpg" alt="Project 1" /></a></li>
-                                        <li><a href=""><img src="images/footer/footer2.jpg" alt="Project 2" /></a></li>
-                                        <li><a href=""><img src="images/footer/footer3.jpg" alt="Project 3" /></a></li>
-                                        <li><a href=""><img src="images/footer/footer4.jpg" alt="Project 4" /></a></li>
-                                        <li><a href=""><img src="images/footer/footer5.jpg" alt="Project 5" /></a></li>
-                                        <li><a href=""><img src="images/footer/footer6.jpg" alt="Project 6" /></a></li> 
+                                    <ul class="parent-container">                                            
+                                        <li><a href="images/owl_slider/1.jpg"><img src="images/footer/footer1.jpg" alt="Tory kolejowe" /></a></li>
+                                        <li><a href="images/owl_slider/2.jpg"><img src="images/footer/footer2.jpg" alt="Most Jeleń" /></a></li>
+                                        <li><a href="images/owl_slider/4.jpg"><img src="images/footer/footer3.jpg" alt="Jezioro Jeleń" /></a></li>
+                                        <li><a href="images/owl_slider/5.jpg"><img src="images/footer/footer4.jpg" alt="Most kolejowy" /></a></li>
+                                        <li><a href="images/owl_slider/6.jpg"><img src="images/footer/footer5.jpg" alt="Jezioro Jeleń" /></a></li>
+                                        <li><a href="images/owl_slider/7.jpg"><img src="images/footer/footer6.jpg" alt="Promenada Jeleń" /></a></li> 
                                     </ul>
                                 </div>
                             </div>
@@ -578,7 +583,7 @@
                         <p>Copyright 2017&copy;  <a href="">Karol-X</a></p>
                     </div>
                 </div>
-            </footer>
+            </footer>  
         </div>
         <!-- My scripts -->
         <script src="js/Mobile_navbar.js"></script>
@@ -590,5 +595,6 @@
         <script src="js/sliderRecommended.js"></script>
         <script src="js/animate.js"></script>
         <script src="js/viewport_checker.js"></script>
+        <script src="js/gallery_magnific.js"></script>
     </body>
 </html>
