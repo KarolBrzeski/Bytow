@@ -25,9 +25,9 @@
     -webkit-transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
     position: relative;
-    right: 250px;
-    top: 0;
+    height: 100%;
     width: 100%;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
