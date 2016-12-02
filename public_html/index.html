@@ -5,6 +5,8 @@
         <title>Bytów</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page icon -->
+        <link rel="Shortcut icon" href="images/bytow.png" />
         <!-- Font Awesome -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Fonts Google -->
@@ -18,7 +20,7 @@
         <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
         <!-- Animate CSS files -->        
         <link href="style/animate.css" rel="stylesheet" />
-         <!-- Magnific Popup core CSS file -->
+        <!-- Magnific Popup core CSS file -->
         <link rel="stylesheet" href="style/magnific-popup.css">
         <!-- JavaScript LESS -->
         <script src="js/less.min.js"></script>
@@ -48,21 +50,21 @@
             <header>
                 <nav>
                     <div class="container">
-                        <div class="navbar">
+                        <div data-target="#main-menu" class="navbar">
                             <div class="nav-logo">
                                 <a href=""><img src="images/bytow.png" alt="Logo city Bytow" ></a>                                 
                             </div>
                             <div class="main-menu-content">
                                 <ul id="main-menu">                                    
-                                    <li><a href="" class="menu-link-active">Start</a></li>
-                                    <li><a href="">Zabytki</a></li>
-                                    <li><a href="">Krajobraz</a></li>
-                                    <li><a href="">Wiadomości</a></li>
-                                    <li><a href="">Sport</a></li>
-                                    <li><a href="">Nocleg</a></li>
-                                    <li><a href="">Rozrywka</a></li>
-                                    <li><a href="">Kontakt</a></li>
-                                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <li><a href="#home">Start</a></li>
+                                    <li><a href="#monuments">Zabytki</a></li>
+                                    <li><a href="#landscapes">Krajobraz</a></li>
+                                    <li><a href="#information">Wiadomości</a></li>
+                                    <li><a href="#sport">Sport</a></li>
+                                    <li><a href="#accommodation">Nocleg</a></li>
+                                    <li><a href="#entertainment">Rozrywka</a></li>
+                                    <li><a href="#contact">Kontakt</a></li>
+                                    <li><a href="#search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Mobile menu -->
@@ -76,7 +78,7 @@
             <div class="top-slider">
                 <ul id="main-slider" class="bxslider">
                     <li>
-                        <div class="main-slider-1">
+                        <div id="home" class="main-slider-1">
                             <div class="container"> 
                                 <div class="main-slider-content">
                                     <h1>Bytów</h1>
@@ -102,7 +104,7 @@
                 </ul>
             </div>
             <!-- Section monuments -->
-            <div class="our-monuments">
+            <div id="monuments" class="our-monuments">
                 <div class="container">
                     <div class="single-col">
                         <div data-animate="animated slideInLeft">
@@ -207,11 +209,11 @@
                 </div>
             </div>
             <!-- Section landscape -->
-            <div class="landscape">
+            <div id="landscapes" class="landscape">
                 <!-- Title -->
                 <div class="section-title">
                     <div class="container">
-                        <h2>Galeria krajobrazów</h2>                        
+                        <h2>Galeria zdjęć</h2>                        
                     </div>
                 </div>
 
@@ -313,7 +315,7 @@
                 </div>
             </div>
             <!-- Section news -->
-            <div class="news">
+            <div id="information" class="news">
                 <div class="section-title">
                     <div class="container">
                         <h2>Wiadomości</h2>
@@ -387,7 +389,7 @@
                 </div>
             </div>
             <!-- Section statistic -->
-            <div class="statistic">
+            <div id="sport" class="statistic">
                 <!-- Title -->
                 <div class="section-title">
                     <div class="container">
@@ -431,7 +433,7 @@
                 </div>
             </div>
             <!-- Section accommodation and entertainment -->
-            <div class="services">
+            <div id="accommodation" class="services">
                 <div class="container">
                     <!-- Title -->
                     <div class="section-title">
@@ -482,7 +484,7 @@
                 </div>
             </div>
             <!-- Section recommended -->
-            <div class="recommended">
+            <div id="entertainment" class="recommended">
                 <div class="container">
                     <!-- Title -->
                     <div class="section-title">                    
@@ -513,7 +515,7 @@
             </div>
             <!-- section footer part 1-->
             <footer>
-                <div class="footer-main">
+                <div id="contact" class="footer-main">
                     <div class="container">
                         <!--Author -->
                         <div class="single-col">
@@ -580,7 +582,7 @@
                 <!-- Copyright footer part 2 -->
                 <div class="copywrite">
                     <div class="container">
-                        <p>Copyright 2017&copy;  <a href="">Karol-X</a></p>
+                        <p>Copyright 2017&copy;<a href="">  Karol-X</a></p>
                     </div>
                 </div>
             </footer>  
@@ -596,5 +598,6 @@
         <script src="js/animate.js"></script>
         <script src="js/viewport_checker.js"></script>
         <script src="js/gallery_magnific.js"></script>
+        <script src="js/animation_menu_bar.js"></script>       
     </body>
 </html>

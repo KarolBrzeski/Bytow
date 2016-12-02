@@ -133,7 +133,7 @@ hr {
     @media @phone{
         .block;
     }
-}
+ }
 
 // Content menu
 .main-menu-content{
@@ -141,9 +141,10 @@ hr {
     .center-vertical;
     ul{
         .list-style-none;
+
         li{
             .float-left;
-            .block;
+            .block; 
             a{
                 color: @menu-link-color;
                 font-size: 15px;
@@ -154,7 +155,9 @@ hr {
                 .basic-transition;
                 &:hover{
                     color: @accent-color;
-                }
+                    padding-bottom: 5px;
+                    border-bottom: 5px solid @accent-color;
+                }                
                 @media @tablet {
                     padding: 20px 22px;
                 }
@@ -163,8 +166,12 @@ hr {
                 font-size: 14px;
 
             }
+            .active{
+                color: @accent-color;
+            }
         }
     }
+
 }
 .slicknav_menu{
     position: fixed;
@@ -722,7 +729,7 @@ footer{
 .copywrite{
     padding: 20px 0;
     z-index: 1;
-    background-color: @footer-copywrite-background;
+    background-color:-copywrite-background;
     border-top: 1px solid @footer-social-borders;
     p{
         font-size: 12px;
